@@ -4,27 +4,25 @@
 ---
 - At first I need to build the Inputs to search for the place that I wanted to get infomation from like New York City, Kent CT...
 ---
-- And, after searching for the city, country... the data is saved all the history. When I need to view it, it will shows all the information about the temperature, humidity, and the wind speed. 
+- And, after searching for the city, country... the data is saved all the history. When I need to view it, it will shows all the information about the temperature, humidity, the wind speed and the UVIndex. 
 ---
 - And, the page will shows 5 day forecast with display date, temperature and the humidity for that city. 
 ---
-- Last, if I click on the city in the Search again, it will shows the current place that have been searched. 
+- Last, if I click on the last city saved on the page, it will shows the current data have been found. 
 
 --- 
-#### I still need to do some work in addition to finishing the homework.
----
 
 ## For the main page- Search place
 
-![main-page](/Assets/Images/mainpage.png)
+![main-page](/Assets/Images/main.png)
 ---
 
 ## After Searching for a place
 
-![showing-page](/Assets/Images/Aftersearching.png)
+![showing-page](/Assets/Images/display.png)
 ---
 
 ## After Searching for a place
 
-![Saved-info](/Assets/Images/Savedcity.png)
+![Saved-info](/Assets/Images/saved.png)
 ---
