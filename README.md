@@ -12,6 +12,10 @@
 
 --- 
 
+🚀🚀 Visit my page => [here](https://thuluong249.github.io/Homework6/)
+
+--- 
+
 ## For the main page- Search place
 
 ![main-page](/Assets/Images/main.png)

@@ -5,3 +5,8 @@
 .show {
     display: block;
 }
+
+.current-uvindex span {
+padding: 5px;
+border-radius: 5px;
+}

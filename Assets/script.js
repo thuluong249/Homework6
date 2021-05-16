@@ -4,10 +4,11 @@ var searchHistory = [];
 const apiKey = "&appid=afaa8eea1769b4359fd8e07b2efcefbd";
 
 let date = new Date();
+loadSearchHistory ();
 
 $("#searchTerm").keypress(function (event) {
 
-  if (event.keyCode === 12) {
+  if (event.keyCode === 13) {
     event.preventDefault();
     $("#searchBtn").click();
   }
@@ -53,6 +54,8 @@ let city = cityToSearchFor
       if(!searchHistory.includes(city)) {
         makeList(city);
         searchHistory.push(city);
+        console.log(searchHistory);
+        saveSearchHistory();
       }
 
     })
@@ -99,10 +102,21 @@ function getUVindex(lat, lon) {
     url: "https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + apiKey,
     method: "GET"
   }).then(function (response) {
-    console.log(response.current.uvi);
+    console.log(response);
     uv = response.current.uvi;
-    const uvindex = $("<p>").addClass("card-text current-uvindex").text("UVIndex: " + uv);
-    $(".card-body").append(uvindex);
+    const uvindex = $("<p>").addClass("card-text current-uvindex").text("UVIndex: ");
+    const span = $("<span>").text(uv);
+    if(uv<3) {
+      $(span).css('background-color', 'green');
+    }else if (uv<6){
+      $(span).css('background-color', 'yellow');
+    }else if (uv<10){
+      $(span).css('background-color', 'red');
+    }else {
+      $(span).css('background-color', 'purple');
+    }
+    uvindex.append(span);
+    $("#currentCity .card-body").append(uvindex);
     $("#uvindex").text("test");
   })
 }
@@ -149,5 +163,13 @@ function getCurrentForecast(city) {
   });
 
 }
-
-
+function loadSearchHistory () {
+searchHistory = JSON.parse(localStorage.getItem("searchHistory"));
+searchHistory.forEach(function(city){
+  console.log(city);
+  makeList(city)
+})
+}
+function saveSearchHistory (){
+localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
+}
