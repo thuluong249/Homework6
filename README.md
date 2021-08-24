@@ -18,12 +18,12 @@
 
 ## For the main page- Search place
 
-![main-page](/Assets/Images/main.png)
+![main-page](/Assets/Images/afterrefresh.png)
 ---
 
 ## After Searching for a place
 
-![showing-page](/Assets/Images/display.png)
+![showing-page](/Assets/Images/search.png)
 ---
 
 ## After Searching for a place

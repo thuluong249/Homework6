@@ -1,3 +1,4 @@
+
 var uv;
 var searchHistory = [];
 // store api key
@@ -198,3 +199,4 @@ function loadSearchHistory() {
 function saveSearchHistory(city) {
   localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
 }
+
