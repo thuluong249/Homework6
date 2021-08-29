@@ -1,5 +1,12 @@
 # Homework6: Server-Side APIs - Weather Dashboard
 
+![banner](/Assets/Images/banner.png)
+
+# 📋 Description 📋
+
+[![License: MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+
+
 - To build this weather dashboard I needed to build from HTML, CSS and Javascript. And get it run bay getting the data from the website: [OpenWeather API] (https://openweathermap.org/api), save the information in Local Storage.
 ---
 - At first I need to build the Inputs to search for the place that I wanted to get infomation from like New York City, Kent CT...
@@ -12,9 +19,17 @@
 
 --- 
 
-🚀🚀 Visit my page => [here](https://thuluong249.github.io/Homework6/)
+🚀🚀 Visit my page => click [here](https://thuluong249.github.io/Homework6/)
 
 --- 
+
+# 🔗 Application Link
+
+* [Github](https://thuluong249.github.io/weather-dashboard-hw6/)
+
+
+# 📸 Screenshots 📸
+
 
 ## For the main page- Search place
 
@@ -30,3 +45,9 @@
 
 ![Saved-info](/Assets/Images/saved.png)
 ---
+
+# 📱 Contact 
+
+* [Github](https://github.com/thuluong249)
+
+* <a href="mailto:thujtn2019@gmmail.com">💌 Email</a> 
